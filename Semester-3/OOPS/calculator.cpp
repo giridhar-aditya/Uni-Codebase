@@ -1,0 +1,20 @@
+/*Create the equivalent of four-function calculator. The program should ask the user to enter a
+number, an operator and another number. (Use floating Point) It should then carry out the
+specified arithmetical operation: Adding, Subtracting, Multiplying, Or Dividing the Two
+numbers. Use a switch statement to select the operation. Finally display the result.*/
+#include<iostream>
+using namespace std;
+int main(){
+    float x,y;
+    char op;
+    cout<<"Enter Your First Number :"; cin>>x;
+    cout<<"Enter Your Second Number :"; cin>>y;
+    cout<<"Enter the Operator (+,-,/,*) :"; cin>>op;
+    switch(op){
+        case '+': cout<<endl<<"RESULT :"<<x+y; break;
+        case '-': cout<<endl<<"RESULT :"<<x-y; break;
+        case '*': cout<<endl<<"RESULT :"<<x*y; break;
+        case '/': cout<<endl<<"RESULT :"<<x/y; break;
+        default: cout<<"Invalid Operator";
+    }
+}
